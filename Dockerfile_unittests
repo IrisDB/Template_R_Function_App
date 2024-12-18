@@ -15,7 +15,7 @@ COPY data/ ./data/
 COPY tests/ ./tests/
 COPY RFunction.R/ ./
 
-RUN R -e "install.packages('renv', repos = 'https://cloud.r-project.org')" && \
+RUN R -e "install.packages('renv', repos = 'https://ftp.gwdg.de/pub/misc/cran')" && \
     R -e 'renv::restore()' && \
     R -e 'renv::clean()'
 
