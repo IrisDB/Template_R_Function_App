@@ -13,7 +13,7 @@ COPY sdk.R ./
 COPY src/ ./src/
 COPY data/ ./data/
 COPY tests/ ./tests/
-COPY app/ ./
+COPY RFunction.R/ ./
 
 RUN R -e 'install.packages("renv")' && \
     R -e 'renv::restore()' && \
