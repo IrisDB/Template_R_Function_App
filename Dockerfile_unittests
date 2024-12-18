@@ -3,7 +3,7 @@ FROM rocker/r-ver:latest
 LABEL org.opencontainers.image.authors="us@couchbits.com"
 LABEL org.opencontainers.image.vendor="couchbits GmbH"
 
-ENV PROJECT_DIR /moveapps-r-sdk
+ENV PROJECT_DIR=/moveapps-r-sdk
 ENV RENV_PATHS_CACHE=/renv/cache
 RUN mkdir -p /renv/cache
 
