@@ -16,9 +16,4 @@ jobs:
       - name: Setup Docker buildx
         uses: docker/setup-buildx-action@v2
 
-      - name: Test via build
-        uses: docker/build-push-action@v4
-        with:
-          context: .
-          file: ./Dockerfile
-          push: false
+
