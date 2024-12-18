@@ -16,3 +16,5 @@ test_that("App creates artifact", {
   # Check if the file exists
   expect_true(file.exists("./data/output/plot.png"))
 })
+
+
