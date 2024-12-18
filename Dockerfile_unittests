@@ -17,7 +17,7 @@ COPY tests/ ./tests/
 COPY RFunction.R/ ./
 
 RUN R -e 'install.packages("renv")' && \
-    R -e 'renv::restore()' && \
+    R -e 'renv::consent(provided = TRUE); renv::restore()' && \
     R -e 'renv::clean()'
 
 RUN R -e 'testthat::test_dir("tests")'
