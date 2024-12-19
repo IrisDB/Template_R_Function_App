@@ -5,7 +5,6 @@ LABEL org.opencontainers.image.vendor="couchbits GmbH"
 
 ENV PROJECT_DIR=/moveapps-r-sdk
 ENV RENV_PATHS_CACHE=/renv/cache
-RUN mkdir -p /renv/cache
 
 RUN apt-get update && apt-get install -y \
     libcurl4-openssl-dev \
