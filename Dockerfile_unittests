@@ -9,7 +9,8 @@ ENV RENV_PATHS_CACHE=/renv/cache
 RUN apt-get update && apt-get install -y \
     libcurl4-openssl-dev \
     libssl-dev \
-    libxml2-dev
+    libxml2-dev \ 
+    libudunits2-dev
 
 # Create the project directory
 RUN mkdir -p $PROJECT_DIR
